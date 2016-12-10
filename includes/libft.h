@@ -6,7 +6,7 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/09 10:58:52 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/09 11:44:32 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/10 13:08:35 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@
 //TODO
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 #endif

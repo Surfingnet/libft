@@ -1,7 +1,7 @@
 NAME =libft.a
 SRC_DIR = srcs/
 INCLUDES_DIR = includes/
-FUNCTIONS=
+FUNCTIONS=ft_memset ft_bzero ft_memcpy
 FLAGS=-Wall -Wextra -Werror
 BINS = $(patsubst %,%.o,$(FUNCTIONS))
 
