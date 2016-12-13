@@ -1,7 +1,7 @@
 NAME =libft.a
 SRC_DIR = srcs/
 INCLUDES_DIR = includes/
-FUNCTIONS=ft_memset ft_bzero ft_memcpy
+FUNCTIONS=ft_memset ft_bzero ft_memcpy ft_memccpy ft_memmove ft_memchr
 FLAGS=-Wall -Wextra -Werror
 BINS = $(patsubst %,%.o,$(FUNCTIONS))
 
@@ -10,7 +10,7 @@ BINS = $(patsubst %,%.o,$(FUNCTIONS))
 all: $(NAME)
 
 $(BINS):
-	gcc -I$(INCLUDES_DIR) $(FLAGS) -c $(patsubst %.o,$(SRC_DIR)%.c,$@)
+	gcc -I $(INCLUDES_DIR) $(FLAGS) -c $(patsubst %.o,$(SRC_DIR)%.c,$@)
 
 $(NAME): $(BINS)
 	ar ruv $(NAME) $(BINS)
