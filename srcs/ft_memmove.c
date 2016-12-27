@@ -5,24 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/13 18:10:54 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/13 18:39:33 by mghazari         ###   ########.fr       */
+/*   Created: 2016/12/27 05:31:26 by mghazari          #+#    #+#             */
+/*   Updated: 2016/12/27 05:31:35 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char		*s1;
-	const unsigned char	*s2;
-
-	s1 = (unsigned char *)dst;
-	s2 = (const unsigned char *)src;
-	while(len > 0)
-	{
-		--len;
-		s1[len] = s2[len];
-	}
+	if (dst < src)
+		return (ft_memcpy(dst, src, len));
+	if (dst > src)
+		return (ft_memcpy_rev(dst, src, len));
 	return (dst);
 }

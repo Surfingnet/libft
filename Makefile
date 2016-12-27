@@ -1,7 +1,17 @@
 NAME =libft.a
 SRC_DIR = srcs/
 INCLUDES_DIR = includes/
-FUNCTIONS=ft_memset ft_bzero ft_memcpy ft_memccpy ft_memmove ft_memchr ft_strlen
+FUNCTIONS=ft_putchar ft_putstr ft_atoi ft_strcat ft_bzero ft_strchr\
+	  ft_putnbr ft_isalnum ft_strcmp ft_isalpha ft_strcpy\
+	  ft_isascii ft_strdup ft_isdigit ft_strlen ft_isprint\
+	  ft_strncat ft_memccpy ft_strncmp ft_memchr ft_strncpy\
+	  ft_memcmp ft_strrchr ft_memcpy ft_memmove ft_tolower\
+	  ft_memset ft_toupper ft_memcpy_rev ft_strstr ft_putendl\
+	  ft_putchar_fd ft_putstr_fd ft_putendl_fd ft_putnbr_fd\
+	  ft_strnstr ft_strlcat ft_memalloc ft_memdel ft_strnew\
+	  ft_strdel ft_strclr ft_striter ft_striteri ft_strmap\
+	  ft_strmapi ft_strequ ft_strnequ ft_strsub ft_strjoin\
+	  ft_strtrim ft_itoa ft_reverse ft_strsplit
 FLAGS=-Wall -Wextra -Werror
 BINS = $(patsubst %,%.o,$(FUNCTIONS))
 

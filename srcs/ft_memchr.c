@@ -5,21 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/14 00:03:13 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/14 00:39:41 by mghazari         ###   ########.fr       */
+/*   Created: 2016/12/27 05:23:35 by mghazari          #+#    #+#             */
+/*   Updated: 2016/12/27 05:23:40 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "stdlib.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
+	unsigned char	a;
+	unsigned char	*str;
 	size_t			i;
-	const unsigned char	*s1;
 
-	s1 = (const unsigned char *)s;
 	i = 0;
-	while (i < n && s1[i] != (unsigned char)c)
+	a = (unsigned char)c;
+	str = (unsigned char*)s;
+	while (i < n)
+	{
+		if (str[i] == a)
+			return (str + i);
 		i++;
-	return (s1[i] == (unsigned char)c ? &(((void *)s1)[i]) : NULL);
+	}
+	return (NULL);
 }

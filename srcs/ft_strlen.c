@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/14 17:57:44 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/14 21:12:53 by mghazari         ###   ########.fr       */
+/*   Created: 2016/12/27 05:53:32 by mghazari          #+#    #+#             */
+/*   Updated: 2016/12/27 05:53:35 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

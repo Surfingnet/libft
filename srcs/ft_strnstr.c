@@ -1,30 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/27 05:31:54 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/27 05:31:58 by mghazari         ###   ########.fr       */
+/*   Created: 2016/12/27 05:50:45 by mghazari          #+#    #+#             */
+/*   Updated: 2016/12/27 05:50:48 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t			i;
-	unsigned char	n;
-	char			*s;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
-	n = (unsigned char)c;
-	s = (char *)b;
-	while (i < len)
+	j = 0;
+	if (ft_strlen((char *)little) == 0)
+		return ((char *)big);
+	while (big[i] && i <= len)
 	{
-		s[i] = n;
+		while (little[j] == big[i + j] && (i + j) <= len)
+		{
+			if (j == ft_strlen((char *)little) - 1)
+				return ((char *)big + i);
+			j++;
+		}
+		j = 0;
 		i++;
 	}
-	return (b);
+	return (NULL);
 }
