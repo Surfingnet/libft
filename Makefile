@@ -1,6 +1,6 @@
 NAME =libft.a
-SRC_DIR = srcs/
-INCLUDES_DIR = includes/
+SRC_DIR = ./
+INCLUDES_DIR = ./
 FUNCTIONS=ft_putchar ft_putstr ft_atoi ft_strcat ft_bzero ft_strchr\
 	  ft_putnbr ft_isalnum ft_strcmp ft_isalpha ft_strcpy\
 	  ft_isascii ft_strdup ft_isdigit ft_strlen ft_isprint\

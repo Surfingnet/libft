@@ -6,14 +6,13 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/09 10:58:52 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/28 06:26:33 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/28 10:07:39 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
 
