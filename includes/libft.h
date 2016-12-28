@@ -6,7 +6,7 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/09 10:58:52 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/27 06:05:43 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/28 06:26:33 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-//TODO
 void	*ft_memalloc(size_t size);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
@@ -65,18 +64,18 @@ char	**ft_strsplit(char const *s, char c);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
-int	ft_strcmp(const char *s1, const char *s2);
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
-int	ft_strequ(char const *s1, char const *s2);
-int	ft_strnequ(char const *s1, char const *s2, size_t n);
-int	ft_atoi(const char *nptr);
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
-int	ft_tolower(int c);
-int	ft_toupper(int c);
+int		ft_strcmp(const char *s1, const char *s2);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_strequ(char const *s1, char const *s2);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_atoi(const char *nptr);
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 
 #endif

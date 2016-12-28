@@ -6,13 +6,13 @@
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/27 05:52:54 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/27 05:52:56 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/28 06:25:46 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void		ft_itoa_intermediate(int n, char *str, int size)
+static void	ft_itoa_intermediate(int n, char *str, int size)
 {
 	int i;
 	int rec;
@@ -41,7 +41,7 @@ static void		ft_itoa_intermediate(int n, char *str, int size)
 	ft_reverse(str, size);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	int		i;
 	int		j;

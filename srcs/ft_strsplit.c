@@ -6,7 +6,7 @@
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/27 05:53:19 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/27 05:53:22 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/28 06:25:12 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static char			**ft_sup(char **sup, int size)
 	return (NULL);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char				**ft_strsplit(char const *s, char c)
 {
 	char		**exit;
 	int			i;
