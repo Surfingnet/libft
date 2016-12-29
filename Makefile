@@ -11,7 +11,7 @@ FUNCTIONS=ft_putchar ft_putstr ft_atoi ft_strcat ft_bzero ft_strchr\
 	  ft_strnstr ft_strlcat ft_memalloc ft_memdel ft_strnew\
 	  ft_strdel ft_strclr ft_striter ft_striteri ft_strmap\
 	  ft_strmapi ft_strequ ft_strnequ ft_strsub ft_strjoin\
-	  ft_strtrim ft_itoa ft_reverse ft_strsplit
+	  ft_strtrim ft_itoa ft_reverse ft_strsplit ft_lstnew
 FLAGS=-Wall -Wextra -Werror
 BINS = $(patsubst %,%.o,$(FUNCTIONS))
 

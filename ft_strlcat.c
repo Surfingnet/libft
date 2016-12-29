@@ -6,7 +6,7 @@
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/27 05:53:47 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/27 05:53:49 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/29 16:01:06 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	while (dst[i] != '\0' && i < size)
 		i++;
 	j = i;
+	if (size < 1)
+		return (ft_strlen(src));
 	while (src[i - j] && (i < size - 1))
 	{
 		dst[i] = src[i - j];

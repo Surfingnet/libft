@@ -6,7 +6,7 @@
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/27 05:45:17 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/27 05:45:20 by mghazari         ###   ########.fr       */
+/*   Updated: 2016/12/29 11:03:06 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_memdel(void **ap)
 {
-	free(*ap);
-	*ap = NULL;
+	if (ap)
+	{
+		free(*ap);
+		*ap = NULL;
+	}
 }
