@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mghazari <mghazari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/27 05:51:05 by mghazari          #+#    #+#             */
-/*   Updated: 2016/12/29 20:14:38 by mghazari         ###   ########.fr       */
+/*   Created: 2016/12/29 21:46:59 by mghazari          #+#    #+#             */
+/*   Updated: 2016/12/29 22:35:23 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+void	ft_lstdel(t_list **alst, void (*del)(void *,size_t))
 {
-	char	*str;
-	size_t	i;
-
-	if (!(str = (char*)ft_memalloc(size + 1)))
-		return (NULL);
-	i = 0;
-	while (i <= size)
-	{
-		str[i] = '\0';
-		i++;
-	}
-	return (str);
+	if (((*alst)->next))
+		ft_lstdel(&((*alst)->next), del);
+	ft_lstdelone(alst, del);
+	free(*alst);
+	*alst = NULL;
 }
