@@ -6,7 +6,7 @@
 /*   By: mghazari <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/09 10:58:52 by mghazari          #+#    #+#             */
-/*   Updated: 2017/01/04 16:07:18 by mghazari         ###   ########.fr       */
+/*   Updated: 2017/04/18 14:47:36 by mghazari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,9 @@ char			*ft_strnew(size_t size);
 char			*ft_strmap(char const *s, char (*f)(char));
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
+char			*ft_strsubf(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
+char			*ft_strjoinf(char const *s1, char const *s2, int f);
 char			*ft_strtrim(char const *s);
 char			*ft_itoa(int n);
 char			*ft_reverse(char *str, int size);
